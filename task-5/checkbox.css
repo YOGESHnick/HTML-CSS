@@ -1,0 +1,76 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/* Hide the Checkbox */
+.hidden-checkbox {
+    display: none;
+}
+
+/* Open Modal Button */
+.open-button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+/* Modal (Initially Hidden) */
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s;
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+}
+
+/* Close Button */
+.close-button {
+    background-color: #e74c3c;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+/* Overlay (Initially Hidden) */
+.overlay {
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s;
+}
+
+/* SHOW  */
+.hidden-checkbox:checked + .open-button + .modal {
+    opacity: 1;
+    visibility: visible;
+}
+
+.hidden-checkbox:checked + .open-button + .modal + .overlay {
+    opacity: 1;
+    visibility: visible;
+}

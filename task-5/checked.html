@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal Using :checked</title>
+    <link rel="stylesheet" href="checkbox.css">
+</head>
+<body>
+
+    <!-- HIDDEN CHECKBOX -->
+    <input type="checkbox" id="modal-toggle" class="hidden-checkbox">
+
+    <!-- OPEN MODAL BUTTON -->
+    <label for="modal-toggle" class="open-button">Open Modal</label>
+
+    <!-- MODAL -->
+    <div class="modal">
+        <div class="modal-content">
+            <h2>Modal Title</h2>
+            <p>This is a pure CSS modal using the `:checked` pseudo-class.</p>
+            <label for="modal-toggle" class="close-button">Close</label>
+        </div>
+    </div>
+
+    <!-- OVERLAY -->
+    <div class="overlay"></div>
+
+</body>
+</html>

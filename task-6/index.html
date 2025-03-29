@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Tabbed Content</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="tabs-container">
+         <!-- TAB BUTTONS -->
+        <input type="radio" id="tab1" name="tab-group" checked>
+        <label for="tab1" class="tab-label">Tab 1</label>
+
+        <input type="radio" id="tab2" name="tab-group">
+        <label for="tab2" class="tab-label">Tab 2</label>
+
+        <input type="radio" id="tab3" name="tab-group">
+        <label for="tab3" class="tab-label">Tab 3</label>
+
+
+        <!-- TAB CONTENT SECTIONS -->
+        <div class="tab-content" id="content1">
+            <h2>Tab 1 Content</h2>
+            <p>This is the content for the first tab.</p>
+        </div>
+
+        <div class="tab-content" id="content2">
+            <h2>Tab 2 Content</h2>
+            <p>This is the content for the second tab.</p>
+        </div>
+
+        <div class="tab-content" id="content3">
+            <h2>Tab 3 Content</h2>
+            <p>This is the content for the third tab.</p>
+        </div>
+    </div>
+
+</body>
+</html>

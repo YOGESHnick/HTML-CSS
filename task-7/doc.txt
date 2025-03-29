@@ -1,0 +1,1 @@
+Implemented automatic carousel, but manual is not working
